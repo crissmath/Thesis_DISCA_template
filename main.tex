@@ -1,0 +1,92 @@
+\documentclass[a4paper]{memoir}
+% Configurations
+\input{config.tex}
+% Archivos Bibliografía
+\bibliography{bibliography/biblio}
+% ---------------------------------------------------------------------
+% Las carpetas para los gráficos
+\graphicspath{
+	{logos/}
+}
+% ---------------------------------------------------------------------
+\title{Optimizing Performance and Efficiency: A Comprehensive Study on Hardware Accelerators and FPGA Applications}
+
+\newcommand{\authorName}{Cristian Ramírez B.}
+\newcommand{\directorOne}{Prof. Enrique Salvador Quintana Ortí.}
+\newcommand{\directorTwo}{Dr. Adrián Castelló Gimeno.}
+\newcommand{\publishDate}{March 2024}
+\chapterstyle{ger}
+
+\begin{document}
+\makeatletter
+\makeatother
+\frontmatter
+% -------------------------------------------------------
+\titlethesis
+
+%Thanks
+\cleardoublepage
+\thispagestyle{plain}
+%\par
+\vspace*{.35\textheight}
+\setlength{\epigraphwidth}{0.5\textwidth}
+\epigraph{Innovation distinguishes between a leader and a follower.}{Steve Jobs}
+
+\cleardoublepage
+\thispagestyle{plain}
+\vspace*{.35\textheight}
+\setlength{\epigraphwidth}{0.48\textwidth}
+\epigraph{The reasonable man adapts himself to the world; the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.}{George Bernard Shaw}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\chapter*{Acknowledgements}
+\input{chapters/1_acknowledgements}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\abstractname}
+
+\input{chapters/2_abstract}     %Habilitar para agregar sección
+\cleardoublepage
+\phantomsection
+\setcounter{tocdepth}{3}
+\tableofcontents*
+\cleardoublepage
+\let\LaTeXStandardClearpage\clearpage
+\phantomsection
+\listoffigures
+\cleardoublepage
+\phantomsection
+\listoftables
+\cleardoublepage
+\phantomsection
+\let\clearpage\LaTeXStandardClearpage % Return to the old definition
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               CHAPTERS               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapters/chap_1/introduction}
+\include{chapters/chap_2/instructions}
+%\include{chapters/chap_3/xxx.tex}
+%\include{chapters/chap_4/xxx.tex}
+%\include{chapters/chap_5/xxx.tex}
+
+% Acronimos
+\addcontentsline{toc}{chapter}{Acronyms}
+\chapter*[Acronyms]{Acronyms}
+\input{chapters/3_acronym}
+% -------------------------------------------------------
+
+% Bibliography
+\bibitemsep = 3ex
+\bibhang = 2em
+
+\printbibliography[title=\bibname]
+% Índice alfabético
+\cleardoublepage
+\phantomsection
+% Fin del documento
+\end{document}

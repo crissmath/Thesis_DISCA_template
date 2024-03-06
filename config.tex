@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                           %
+%               config.tex                  %
+%                                           %
+% Configuration settings for the main LaTeX %
+% document. This file includes package      %
+% inclusions, layout configurations, and    %
+% custom commands for my main thesis        %
+% document.                                 %
+%                                           %
+% Last Updated: [09/10/2023]                %
+% Author: Crissmath                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Use packs                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Encoding and Typography
+\usepackage[utf8]{inputenc}
+\usepackage{microtype} % Improves spacing and typography
+\usepackage[paperwidth=170mm, paperheight=240mm]{geometry} % Document dimensions
+\usepackage{tocloft} % Control over Table of Contents, List of Figures, etc.
+
+% Languages and Quotes
+\usepackage[english]{babel}
+\usepackage{csquotes} % Recommended for biblatex
+
+% Algorithms
+\usepackage{algorithm}
+\counterwithin{algorithm}{chapter} 
+\usepackage{algcompatible}
+
+% Mathematics
+\usepackage{amsmath}
+
+% Graphics and Figures
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit}
+\usepackage{pdflscape}
+\usepackage{rotating}
+
+% Bibliography
+\usepackage[url = false,style = numeric,
+            hyperref = true, backref = true,
+            sorting = none,
+            maxbibnames = 8,
+            maxcitenames = 8,
+            minnames = 3,
+            giveninits=true, %Imprimir solo las iniciales
+            backend = bibtex % Otra opción es 'backend = bibtex' biber
+]{biblatex}
+    
+% Lists and Tables
+\usepackage[shortlabels]{enumitem}
+\usepackage{expdlist} 
+\usepackage{acronym_expdlist}  
+\usepackage{hhline} 
+\usepackage{xurl}
+\usepackage{xspace}
+
+% Hyperlinks and PDF features
+\usepackage[a-1b]{pdfx}
+\usepackage{nameref}
+\usepackage{hyperref}
+\usepackage{memhfixc}
+
+% Code and programming language
+\usepackage{listings}
+
+%Coments
+\usepackage{comment}
+
+%Condicional compilation
+\usepackage{etoolbox}
+
+% Commands for plot 
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{lipsum}
+\usepackage{titlesec} 
+
+
+\setsecnumdepth{subsubsection}
+\setlength{\cftpartnumwidth}{2em}
+\setstocksize{24cm}{17cm}
+\settrims{0pt}{0pt}
+\setlength{\textwidth}{12.5cm}
+\setlrmargins{2.5cm}{*}{*}
+\setlength{\uppermargin}{3cm}
+\setlength{\headheight}{0.5cm}
+\setlength{\headsep}{0.5cm}
+\setlength{\footskip}{24pt}
+\checkandfixthelayout
+\pagestyle{ruled}
+
+% Redefines the title page with custom formatting.
+% Includes logos, author name, advisors, institution, and date.
+% This command defines a new title page format called "titleDS".
+\newcommand*{\titlethesis}{
+  \begingroup % Start a group to localize the scope of \centering and page style
+  \thispagestyle{empty} % No headers or footers
+  \centering % Center all content
+  \includegraphics[width=0.3\textwidth]{marca_UPV_2}\\[1\baselineskip]
+  {\Large\scshape{Departamento de Informática\\
+  de Sistemas y Computadores}}\\[1.2\baselineskip]
+  \vspace{0.03\textheight}
+  {\LARGE\textbf{\thetitle}\par}
+  \vspace{4\baselineskip}
+  {\Large\textbf{\authorName}}\\[1.5\baselineskip]
+  {\large Advisors:\\[2\baselineskip]
+  \directorOne\\
+  \directorTwo\\[2\baselineskip]}
+  {\large\publishDate}\\
+  \endgroup
+}
+
+\DefineBibliographyStrings{english}{%
+ backrefpage = {cited on p.},
+ backrefpages = {cited on pp.},
+}
+
+\lstdefinelanguage{Assembler}
+{morekeywords={movq,movl,imull,vsubps,vaddps,vmulps,addi,vfsub,vfadd,vfmul,vs1r, vle32,vfmv,vsetvli,ldr,fsub,fmul,fadd,str,fmov},
+sensitive=false,
+morecomment=[l]{//},
+morecomment=[s]{/*}{*/},
+morestring=[b]",
+}
