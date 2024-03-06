@@ -2,7 +2,12 @@
 
 ## Visión general
 
-Este repositorio contiene una plantilla de LaTeX simple y amigable que diseñé durante mis estudios doctorales en Valencia. Con la guía de los profesores Enrique Quintana Orti y Adrian Castellon, esta plantilla fue desarrollada para alinearse con los requisitos de formato de la escuela doctoral para la presentación de tesis.
+Este repositorio contiene una plantilla de LaTeX simple y amigable que diseñé durante mis estudios doctorales en Valencia. Con la guía de los profesores:
+
+- Enrique Quintana Orti
+- Adrián Castelló.
+
+Esta plantilla fue desarrollada para alinearse con los requisitos de formato de la escuela doctoral para la presentación de tesis.
 
 La plantilla está meticulosamente elaborada para garantizar el cumplimiento de los estándares académicos de la universidad, incluyendo la alineación del texto, los tamaños de fuente, los estilos de los encabezados y los márgenes. Su objetivo es simplificar la organización y presentación del trabajo académico, apoyando varios tipos de contenido como texto, imágenes, tablas y referencias.
 
