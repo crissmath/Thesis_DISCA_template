@@ -1,21 +1,21 @@
-# PhD Thesis LaTeX Template
+# Plantilla de Tesis Doctoral LaTeX
 
-## Overview
+## Visión general
 
-This repository contains a simple and user-friendly LaTeX template designed during my doctoral studies in Valencia. With guidance from Professors Enrique Quintana Orti and Adrian Castellón, this template was developed to align with the doctoral school's formatting requirements for thesis presentation.
+Este repositorio contiene una plantilla de LaTeX simple y amigable que diseñé durante mis estudios doctorales en Valencia. Con la guía de los profesores Enrique Quintana Orti y Adrian Castellon, esta plantilla fue desarrollada para alinearse con los requisitos de formato de la escuela doctoral para la presentación de tesis.
 
-The template is meticulously crafted to ensure compliance with the university's academic standards, including text alignment, font sizes, heading styles, and margins. It aims to simplify the organization and presentation of scholarly work, supporting various content types like text, images, tables, and references.
+La plantilla está meticulosamente elaborada para garantizar el cumplimiento de los estándares académicos de la universidad, incluyendo la alineación del texto, los tamaños de fuente, los estilos de los encabezados y los márgenes. Su objetivo es simplificar la organización y presentación del trabajo académico, apoyando varios tipos de contenido como texto, imágenes, tablas y referencias.
 
-## Features
+## Características
 
-- Tailor-made to meet the doctoral school's format requirements.
-- Supports a clear and organized presentation of scholarly work.
-- Includes templates for text, figures, tables, and references.
-- Structured to facilitate a logical flow of content.
-- Flexible design adaptable to different research needs and areas.
+- Hecha a medida para cumplir con los requisitos de formato de la escuela doctoral.
+- Apoya una presentación clara y organizada del trabajo académico.
+- Incluye plantillas para texto, figuras, tablas y referencias.
+- Estructurada para facilitar un flujo lógico de contenido.
+- Diseño flexible adaptable a diferentes necesidades y áreas de investigación.
 
-## Getting Started
+## Comenzando
 
-1. Clone this repository to your local machine using:
+1. Clona este repositorio en tu máquina local usando:
    ```bash
    git clone https://github.com/crissmath/Thesis_DISCA_template.git
